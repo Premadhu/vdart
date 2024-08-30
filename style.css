@@ -1,0 +1,1305 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    /* font-family: "Arimo", sans-serif; */
+    /* font-family: "Figtree", sans-serif; */
+    /* font-family: "Red Hat Display", sans-serif; */
+    /* font-family: "Roboto", sans-serif; */
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8f2f4;
+    font-optical-sizing: auto;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Roboto Condensed", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+}
+
+.align {
+    /* max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem; */
+    max-width: 1305px;
+    margin: auto;
+}
+
+.componentSpacing {
+    padding: 10rem 0;
+}
+
+.miniPad {
+    padding: 1rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/*PARENT CONTAINER STARTS*/
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/*PARENT CONTAINER ENDS*/
+
+/* HEADER */
+.navContainer {
+    /* background-color: #660600; */
+}
+
+.navBar {
+    /* background-color: #ff0f00; */
+}
+
+.navHead {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 1.5rem 0rem;
+    border-bottom: 0.1rem solid #c3ccdb;
+}
+
+.logo {
+    /* background-color: aqua; */
+
+}
+
+.logo figure img {
+    /* background-color: slategrey; */
+    height: 4rem;
+    width: auto;
+    /* margin-right: 4rem; */
+}
+
+.navLink {
+    /* background-color: yellow; */
+    margin-left: 17rem;
+}
+
+.navLink li {
+    /* background-color: #800080; */
+    font-size: 1.5rem;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    font-weight: 400;
+    /* gap: 2rem; */
+    /* font-family: "proxima-nova", Sans-serif; */
+}
+
+.navLink i {
+    /* background-color: #ff0f00; */
+    font-size: 1rem;
+    color: black;
+    padding-left: 1rem;
+}
+
+.navLink a {
+    /* background-color: magenta; */
+    text-decoration: none;
+    color: black;
+}
+
+.navLink li:hover a {
+    color: #0047BB;
+    border-bottom: 0.3rem solid #0047BB;
+    padding-bottom: 2.8rem;
+}
+
+.navLink li:hover i {
+    color: #0047BB;
+}
+
+.navButton {
+    /* background-color: blue; */
+}
+
+.navButton button {
+    /* background-color: red; */
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 1.3rem 2rem;
+    /* margin: 1rem; */
+    border: 0.2rem solid #0047BB;
+    margin-right: 5.5rem;
+}
+
+.navButton button:hover {
+    background-color: #0047BB;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.navButton button:hover a {
+    color: white;
+}
+
+.navButton a {
+    /* background-color: mediumorchid; */
+    text-decoration: none;
+    color: #0047BB;
+}
+
+
+/* NAV BAR ENDS */
+
+.heroContainer {
+    background-color: #ffffff;
+}
+
+.heroSection {
+    /* background-color: aquamarine; */
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+
+}
+
+.heroBody {
+    background-color: blueviolet;
+    background: linear-gradient(rgba(0, 0, 0, 0.256), rgba(0, 0, 0, 0.374)), url(./assets/images/Web-hero-NHCCE-02-scaled.jpg);
+    /* background-image: url(./assets/images/Web-hero-NHCCE-02-scaled.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10rem 1rem 0rem 20rem;
+}
+
+.heroDetails {
+    /* background-color: chartreuse; */
+}
+
+.heroDetails h2 {
+    /* background-color: violet; */
+    font-size: 3.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+.heroDetails h1 {
+    /* background-color: crimson; */
+    font-size: 7.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    /* letter-spacing: 0.5rem; */
+
+}
+
+.heroButton {
+    /* background-color: darkgoldenrod; */
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+}
+
+.heroButton a {
+    /* background-color: yellow; */
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.heroButton i {
+    /* background-color: rgb(81, 194, 130); */
+    color: #ffffff;
+    font-size: 3rem;
+    padding-left: 2.5rem;
+
+}
+
+/* HERO SECTION ENDS */
+
+
+/* MAIN */
+
+.clientContainer {
+    /* background-color: #fc3e31; */
+}
+
+.client {
+    background-color: rgb(0, 0, 0);
+    padding: 1.5rem 0rem;
+}
+
+.clientBody {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* gap: 2rem; */
+}
+
+.image {
+    padding: 5rem;
+}
+
+.image img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+/* CLIENT CONTAINER ENDS */
+.platformContainer {
+    background-color: #ffffff;
+}
+
+.platform {
+    /* background-color: #ff0f00; */
+    /* padding: 10rem 0rem; */
+    border-bottom: 0.1rem solid rgb(106, 171, 198);
+
+}
+
+.platformHead {
+    /* background-color: blueviolet; */
+
+}
+
+.platformHead h6 {
+    /* background-color: yellow; */
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(163, 170, 174);
+    font-family: "Roboto", sans-serif;
+
+}
+
+.platformHead h2 {
+    /* background-color: rgb(207, 122, 57); */
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.8rem;
+    color: black;
+    font-weight: 300;
+    padding: 1.5rem 0rem;
+}
+
+.platformHead p {
+    /* background-color: rgb(242, 27, 238); */
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding-right: 30rem;
+}
+
+.platformBody {
+    /* background-color: rgb(255, 255, 255); */
+    gap: 4rem;
+    padding-top: 7rem;
+}
+
+.digital {
+    /* background-color: darkblue; */
+}
+
+.digital figure img {
+    /* background-color: rgb(26, 201, 145); */
+}
+
+.digital h3 {
+    /* background-color: rgb(106, 8, 54); */
+    font-size: 1.9rem;
+    color: black;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    padding: 3rem 0rem;
+}
+
+.digital p {
+    /* background-color: darkblue; */
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+.digital a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.textLink {
+    /* border-color: #ff0f00; */
+    padding-top: 4rem;
+}
+
+.textLink a {
+    /* background-color: rgb(4, 105, 93); */
+    font-size: 1.6rem;
+    color: rgb(0, 71, 187);
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+/* PLATFORM CONTAINER ENDS*/
+
+.futureContainer {
+    background-color: rgb(255, 255, 255);
+}
+
+.future {
+    /* background-color: #0047BB; */
+    
+
+}
+
+.futureBody {
+    /* background-color: #472aae; */
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+
+    /* position: relative; */
+    border-bottom: 0.1rem solid rgb(106, 171, 198);
+}
+
+.futureText {
+    background-color: rgb(255, 255, 255);
+    /* margin-left: 20rem; */
+    margin-top: 20rem;
+    margin-bottom: 15rem;
+    z-index: 2;
+    width: 150%;
+    /* position: absolute; */
+}
+
+.futureText h6 {
+    /* background-color: var(--secondaryColor); */
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(163, 170, 174);
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+.futureText h2 {
+    /* background-color: seagreen; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.8rem;
+    color: black;
+    font-weight: 300;
+    padding: 1.5rem 0rem;
+}
+
+.futureText p {
+    /* background-color: #c3ccdb; */
+    font-size: 1.6rem;
+    color: rgb(99, 91, 91);
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    /* margin-right: 40rem; */
+}
+
+.futureImage {
+    /* background-color: orange; */
+    background-image: url(./assets/images/re-in-d-fue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30rem;
+    width: 100%;
+}
+.futureBorder{
+    background-color:rgb(106, 171, 198);
+    height: 0.02rem;
+    width: auto;
+    margin-bottom: 5rem;
+    /* padding-right: 4rem; */
+}
+
+
+/* FUTURE CONTAINER ENDS */
+
+.casestudiesContainer {
+    background-color: #ffffff;
+  
+}
+
+.casestudies {
+    /* background-color: #660600; */
+    padding-top: 5rem;
+    padding-bottom: 25rem;
+}
+
+.casestudiesHead {
+    /* background-color: tan; */
+  
+}
+
+.casestudiesHead h2 {
+    /* background-color: rgb(236, 137, 8); */
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 300;
+
+}
+
+.casestudiesBody {
+    /* background-color: yellow; */
+    padding-top: 4rem;
+    gap: 3rem;
+}
+
+.card {
+    /* background-color: rgb(18, 209, 18); */
+
+
+}
+.card:hover .cardBox h5{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.cardImage {
+    /* background-color: rgb(141, 60, 60); */
+    /* padding: 2rem 0rem; */
+
+}
+
+.cardImage img {
+    /* background-color: orchid; */
+    width: 100%;
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    top: 60px;
+    padding: 0 2rem;
+}
+
+
+.cardBox {
+    /* background-color: #67e336; */
+}
+
+.cardBox:hover h5{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 0.5rem;
+    transition: 1s;
+    /* transform: scale(1.1);
+    transition: 1s; */
+}
+
+.cardBox h5 {
+    /* background-color: rgb(158, 64, 64); */
+    padding: 8.5rem 2.2rem 8rem 3.05rem;
+    /* height: 20rem; */
+    /* width: 43rem; */
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    position: absolute;
+    margin-top: -5rem;
+
+
+}
+
+.cardBox a {
+    /* background-color: rgb(0, 71, 187); */
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+
+
+
+
+.card:hover .cardBox1 h5{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.cardImage1 {
+    /* background-color: rgb(141, 60, 60); */
+    /* padding: 2rem 0rem; */
+
+}
+
+.cardImage1 img {
+    /* background-color: orchid; */
+    width: 100%;
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    top: 60px;
+    padding: 0 2rem;
+}
+
+
+.cardBox1 {
+    /* background-color: #67e336; */
+}
+
+.cardBox1:hover h5{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 0.5rem;
+    transition: 1s;
+    /* transform: scale(1.1);
+    transition: 1s; */
+}
+
+.cardBox1 h5 {
+    /* background-color: rgb(158, 64, 64); */
+    padding: 8.5rem 2.2rem 5.5rem 3.05rem;
+    /* padding: 2rem 2rem 3rem 4rem ; */
+    margin-right: 54rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    position: absolute;
+    margin-top: -5rem;
+
+
+}
+
+.cardBox1 a {
+    /* background-color: rgb(0, 71, 187); */
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+
+
+
+
+
+
+.card:hover .cardBox2 h5{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.cardImage2 {
+    /* background-color: rgb(141, 60, 60); */
+    /* padding: 2rem 0rem; */
+
+}
+
+.cardImage2 img {
+    /* background-color: orchid; */
+    width: 100%;
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    top: 60px;
+    padding: 0 2rem;
+}
+
+
+.cardBox2 {
+    /* background-color: #67e336; */
+}
+
+.cardBox2:hover h5{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 0.5rem;
+    transition: 1s;
+    /* transform: scale(1.1);
+    transition: 1s; */
+}
+
+.cardBox2 h5 {
+    /* background-color: rgb(158, 64, 64); */
+    padding: 8.5rem 2.2rem 5.5rem 3.05rem;
+    /* padding: 2rem 2rem 3rem 4rem ; */
+    margin-right: 9rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    position: absolute;
+    margin-top: -5rem;
+
+
+}
+
+.cardBox2 a {
+    /* background-color: rgb(0, 71, 187); */
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+
+
+
+
+
+/* CASE STUDIES CONTAINER ENDS */
+
+/* FOOTER */
+
+.formContainer {
+    /* background-color: #ffffff; */
+
+    
+}
+
+.form {
+    background-color: #F9F8F8;
+   
+
+}
+
+.formBody {
+    /* background-color:#ba4d4d; */
+    /* padding-right: 2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formText {
+    /* background-color: rgb(0, 236, 253); */
+}
+
+.formText h6 {
+    /* background-color: steelblue; */
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+.formText a {
+    /* background-color: crimson; */
+    color: rgb(163, 170, 174);
+    text-decoration: none;
+}
+
+.formText h2 {
+    /* background-color: seagreen; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.formField {
+    /* background-color: rgba(92, 76, 76, 0.132); */
+    /* padding: 1rem; */
+}
+
+label {
+    /* background-color: hotpink; */
+    font-size: 1.3rem;
+    padding-top: 2rem;
+}
+
+span {
+    color: red;
+}
+
+input {
+    padding: 1rem 13rem 1rem 2rem;
+    /* padding: 1rem 14rem 1rem 2rem; */
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.2rem solid #CAD5E2;
+
+}
+
+textarea {
+    padding: 1.5rem 28rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.2rem solid #CAD5E2;
+}
+
+::placeholder {
+    font-size: medium;
+}
+.names {
+    /* background-color: #0047BB; */
+    gap: 4rem;
+}
+
+.fname {
+    /* background-color: yellow; */
+}
+
+.lname {
+    /* background-color: crimson; */
+}
+
+.mail {
+    /* background-color: #ba4d4d; */
+    gap: 4rem;
+
+}
+
+.mailBox {
+    /* background-color: purple; */
+}
+
+.phonenumber {
+    /* background-color: limegreen; */
+}
+
+.location {
+    /* background-color: yellow; */
+}
+
+.location input {
+    /* background-color: royalblue; */
+    padding: 1rem 52rem 1rem 2rem;
+}
+/* .location input::placeholder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.job {
+    /* background-color: violet; */
+}
+
+.job input {
+    /* background-color: yellow; */
+    padding: 1rem 52rem 1rem 2rem;
+}
+
+.job h6 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: darkgray;
+}
+
+.overview {
+    /* background-color: rgb(0, 71, 187); */
+}
+
+.chbox {
+    /* background-color: moccasin; */
+    padding-top: 2.5rem;
+}
+
+.chbox a {
+    color: hsl(217, 69%, 22%);
+    font-weight: 700;
+}
+
+.captcha {
+    /* background-color: salmon; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.blue {
+    background-color: #1A73E8;
+    padding: 1.3rem;
+    height: 6rem;
+    width: 18rem;
+    border-radius: 0.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.blue h6 {
+    /* background-color: #ff0f00; */
+    font-size: 1.2rem;
+    color: white;
+    padding-bottom: 0.3rem;
+    font-weight: 400;
+}
+
+.blue a {
+    /* background-color: yellow; */
+    text-decoration: none;
+    color: white;
+    margin-right: 0.8rem;
+}
+
+.blue a:hover {
+    border-bottom: 0.1rem solid white;
+}
+
+.clogo {
+    background-color: #F9F9F9;
+    background-image: url(./assets/images/logo_48.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 6rem;
+    width: 7rem;
+    margin-right: 47.4rem;
+    border-radius: 0.2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.button1 {
+    /* background-color: olivedrab; */
+}
+
+.button1 button {
+    background-color: #0047BB;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.2rem 2.8rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+
+/* FORM CONTAINER ENDS */
+
+
+.copyrightContainer {
+    background-color: rgb(255, 255, 255);
+    padding-top: 2rem;
+}
+
+.copyright {
+    background-color: #111111
+}
+
+.copyrightBody {
+    /* background-color: #dd8282; */
+    padding: 8rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.links {
+    /* background-color: rgb(228, 110, 19); */
+
+}
+
+.links h6 {
+    /* background-color: darkblue; */
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+.links a {
+    /* background-color: #ff0f00; */
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    padding: 0rem 0.4rem;
+}
+
+.icons {
+    /* background-color: rgb(8, 101, 44); */
+}
+
+.icons a {
+    /* background-color: purple; */
+}
+
+.icons i {
+    /* background-color: salmon; */
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+.icons i:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* COPYRIGHTS CONTAINER ENDS */
+
+/*RESPONSIVE DESIGN DEVICES*/
+/*for responsive target the row code(display:grid)*/
+/*Small devices(landscape phones, upto 576px and below)*/
+@media(width <=576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .platformHead h2,.futureText h2,.casestudiesHead h2, .formText h2{
+        font-size: 2.6rem;
+    }
+    .heroSection{
+        padding: 8;
+        /* margin: 0;width: 100%; */
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .heroBody{
+        padding: 5rem 2rem 3rem 2rem;
+    }
+    .heroDetails h2{
+        font-size: 1.5rem;
+    }
+    .heroDetails h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .heroButton{
+        padding-top: 22rem;
+        padding-bottom: 4rem;
+    }
+    /* HERO SECTION ENDS */
+    .clientBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5.5rem 0rem;
+    }
+    
+    .image {
+        padding: 1rem 5.3rem;
+        /* padding: 0; */
+        /* padding: 0rem 10rem 2rem 3rem; */
+    }
+    /* CLIENT ENDS */
+   
+    
+    .platformHead p {
+        padding: 0;
+    }
+    .platform{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .digital h3{
+        font-size: 1.5rem;
+        /* text-align: justify; */
+    }
+    .digital p{
+        font-size: 1.5rem;
+    }
+    .digital a{
+        font-size: 1.5rem;
+    }
+
+
+
+
+    /* PLATFORM ENDS */
+    .future {
+        
+    }
+    
+    .futureBody {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+    }
+    
+    .futureText {
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        /* padding-top: 2rem; */
+        position:absolute;
+        left: 0;
+        text-align: justify;
+    }
+    .futureImage {
+        /* padding: 12rem 20rem 12rem 20rem; */
+        position: relative;
+        /* padding: 6rem 19rem;   */
+        width: 100%;
+        padding-right: 2rem;
+    }
+
+    /* FUTURE ENDS */   
+    
+    .casestudiesContainer {
+        background-color: #ffffff;
+      
+    }
+    
+    .casestudies {
+        /* background-color: #660600; */
+        /* padding-top: 30rem; */
+        padding-bottom: 25rem;
+        /* padding: 0;
+        margin: 0;
+        width: 100%; */
+    }
+    
+    .casestudiesHead {
+        /* background-color: tan; */
+        padding-left: 4rem;
+    }
+    
+    .casestudiesHead h2 {
+        font-size: 2.6rem;
+    
+    }
+    
+    .casestudiesBody {
+        gap: 20rem;
+    }
+    
+    .cardImage img {
+        border-radius: 1rem;
+        padding: 0 5rem;
+    }
+    .cardBox h5 {
+        padding: 8.5rem 2.2rem 8rem 3.05rem;
+        padding: 5rem 0rem 6rem 0rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        /* font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400; */
+        position: absolute;
+        margin-top: -3rem;
+        text-align: center;
+    
+    }
+    .cardImage1 img {
+        border-radius: 1rem;
+        padding: 0 5rem;
+    }
+    .cardBox1 h5 {
+        /* padding: 8.5rem 2.2rem 8rem 3.05rem; */
+        padding: 5rem 0rem 5.5rem 0rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        /* font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400; */
+        position: absolute;
+        margin-top: -3rem;
+        text-align: center;
+    
+    }
+    
+    .cardImage2 img {
+        border-radius: 1rem;
+        padding: 0 5rem;
+    }
+    .cardBox2 h5 {
+        padding: 8.5rem 2.2rem 8rem 3.05rem;
+        padding: 5rem 0rem 6rem 0rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        /* font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400; */
+        position: absolute;
+        margin-top: -3rem;
+        text-align:center;
+    
+    }
+    
+
+    
+
+    /* CASESTUDIES ENDS */
+    .formBody{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form {
+        
+        padding: 0;
+        margin: 0;
+    
+    }
+    .formText {
+        padding-top: 6rem;
+        padding-left: 4rem;
+        padding-right: 0rem;
+    }
+    
+    
+    .formText h2 {
+        padding-right: 40rem;
+        padding-top: 1.5rem;
+       
+    }
+    
+    .formField {
+        padding: 8rem 4rem;
+    }
+    input {
+       
+        padding: 1rem 8rem 1rem 2rem;
+    }
+    
+    textarea {
+        padding: 1rem 8rem 1rem 5rem;
+    }
+    .names {
+        gap: 0.5rem;
+    }
+    
+    .mail {
+        gap: 0.5rem;
+    
+    }
+    .location input {
+      
+        padding: 1rem 8rem 1rem 2rem;
+    }    
+    .job input {
+        padding: 1rem 8rem 1rem 2rem;
+    }
+    
+    .job h6 {
+        padding-right: 40rem;
+        font-size: 1.16rem;
+    }
+    .overview label{
+        padding-right: 40rem;
+    }
+    .chbox label{
+        padding-right: 50rem;
+    }
+
+
+
+
+    /* FORM ENDS */
+    .copyrightBody {
+       padding: 6rem 4rem 6rem 4rem ;
+    }
+    .icons{
+        padding-top: 7rem;
+    }
+    .links h6{
+
+    }
+    
+}
+
+/*Medium devices (tablets, upto 768px and above)*/
+@media (width >=577px) and (width <=768px) {}
+
+/*Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {}
+
+
+/* X-Large devices (large desktops, upto 1200px and above)  */
+@media (width >=993px) and (width <=1200px) {}
+
+/* XX-Large devices (larger desktops, upto 1400px and above)  */
+@media (width >=1200px) {}
